@@ -1,0 +1,51 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "enum34"
+version = "1.1.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/11/c4/2da1f4952ba476677a42f25cd32ab8aaf0e1c0d0e00b89822b835c7e654c/enum34-1.1.10.tar.gz", hash = "sha256:cce6a7477ed816bd2542d03d53db9f0db935dd013b70f336a95c73979289f248", size = 28187 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/63/f6/ccb1c83687756aeabbf3ca0f213508fcfb03883ff200d201b3a4c60cedcc/enum34-1.1.10-py3-none-any.whl", hash = "sha256:c3858660960c984d6ab0ebad691265180da2b43f07e061c0f8dca9ef3cffd328", size = 11224 },
+]
+
+[[package]]
+name = "ignition-83-tag-api"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ignition-api" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "ignition-api", specifier = ">=8.3.6.post1" }]
+
+[[package]]
+name = "ignition-api"
+version = "8.3.6.post1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "enum34" },
+    { name = "java-api" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e6/b1/8d64ce3dd2b4198f3902d66a20f2fa94c804253452396c97b57be342f559/ignition_api-8.3.6.post1.tar.gz", hash = "sha256:243a12ece3e9dc290e59eed233dd8729d62c50e7b4fcb30cc0a8ad1ac2cfd101", size = 178989 }
+
+[[package]]
+name = "java-api"
+version = "17.26.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5b/0a/b41ee202aa54484e2d21e014a43127268a4f138066cbd5e5aed4b815b779/java_api-17.26.5.tar.gz", hash = "sha256:9bb74897b0838d6e87a8dc118a56c284fdf660f9db2f2dfbe5b95b672af9cf1e", size = 36583 }
+
+[[package]]
+name = "typing"
+version = "3.10.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/1b/835d4431805939d2996f8772aca1d2313a57e8860fec0e48e8e7dfe3a477/typing-3.10.0.0.tar.gz", hash = "sha256:13b4ad211f54ddbf93e5901a9967b1e07720c1d1b78d596ac6a439641aa1b130", size = 78962 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/5d/865e17349564eb1772688d8afc5e3081a5964c640d64d1d2880ebaed002d/typing-3.10.0.0-py3-none-any.whl", hash = "sha256:12fbdfbe7d6cca1a42e485229afcb0b0c8259258cfb919b8a5e2a5c953742f89", size = 26320 },
+]
